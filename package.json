@@ -1,0 +1,24 @@
+{
+  "name": "crud-azure-function",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\"",
+    "typeorm": "typeorm-ts-node-commonjs -d ./infra/database/data-source.ts"
+  },
+  "dependencies": {
+    "mssql": "^9.0.1",
+    "typeorm": "^0.3.10"
+  },
+  "devDependencies": {
+    "@azure/functions": "^3.2.0",
+    "@types/node": "16.x",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.0.0"
+  }
+}
